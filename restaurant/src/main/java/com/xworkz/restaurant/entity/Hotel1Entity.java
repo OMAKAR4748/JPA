@@ -2,10 +2,7 @@ package com.xworkz.restaurant.entity;
 
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Getter
 @Setter
@@ -14,6 +11,8 @@ import javax.persistence.Table;
 @ToString
 @Entity
 @Table(name = "hotel")
+@NamedQuery(name = "getAllData",query = "Select hotel from ShamHotel hotel")
+@NamedQuery(name = "getByName" ,query = "select hotel from ShamHotel hotel where hotel.hotelName =:name")
 public class Hotel1Entity {
     @Id
     @Column(name = "id")
