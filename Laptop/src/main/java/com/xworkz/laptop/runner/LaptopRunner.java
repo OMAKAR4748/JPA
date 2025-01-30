@@ -13,9 +13,9 @@ public class LaptopRunner {
     private static LaptopService service = new LaptopServiceImpl();
 
     public static void main(String[] args) {
-        LaptopEntity laptop = new LaptopEntity(0,"MacBook Pro", "Apple", "Space Grey", "Apple M1", 512, 8);
+        LaptopEntity laptop = new LaptopEntity(2,"MacBook Pro", "Apple", "Space Grey", "Apple M1", 512, 8);
 
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("laptop");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant");
         EntityManager entityManager = emf.createEntityManager();
 
         entityManager.getTransaction().begin();

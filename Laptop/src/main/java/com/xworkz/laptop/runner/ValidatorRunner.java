@@ -18,5 +18,6 @@ public class ValidatorRunner {
         laptopDto.setRam(16);
 
         repository.validateAndSave(laptopDto);
+        repository.validateAndSave(laptopDto);
     }
 }

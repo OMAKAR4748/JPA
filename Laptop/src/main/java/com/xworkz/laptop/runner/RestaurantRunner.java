@@ -7,20 +7,22 @@ import com.xworkz.laptop.repository.RestaurantRepoImpl;
 public class RestaurantRunner {
     public static void main(String[] args) {
         RestaurantEntity entity = new RestaurantEntity();
-        entity.setName("Rudra");
-        entity.setLocation("Bashyam Circle");
-        entity.setRating(4.1);
-        entity.setPincode(5900117L);
+        entity.setName("Annapurna");
+        entity.setLocation("Hubbli");
+        entity.setRating(4.5);
+        entity.setPincode(590020L);
         entity.setType("Veg");
-        entity.setC_no(8945457787L);
+        entity.setC_no(8797545761L);
 
-        System.out.println(entity);
         RestaurantRepo repo = new RestaurantRepoImpl();
-//        repo.saveData(entity);
-        repo.Update(7,"KFC");
+        repo.saveData(entity);
 
         System.out.println("=====================================================");
 
-        repo.delete(24);
+        repo.Update(34,"Shiv");
+
+        System.out.println("=====================================================");
+
+        repo.delete(33);
     }
 }
